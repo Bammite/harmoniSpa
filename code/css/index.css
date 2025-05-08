@@ -2,13 +2,16 @@
     --animate-duration: 2s;
     --animate-delay: 1s;
     --animate-repeat: 1;
+    
 }
 /* Reset et polices */
 * {
+
+    font-family: 'Inria Sans', sans-serif;
+    font-style: normal;
+    transition: all .4s;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -96,6 +99,7 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
     z-index: 10;
+    color: white;
 }
 
 .logo span {
@@ -254,7 +258,7 @@ nav ul li a:hover {
 
 .about-content p {
     margin-bottom: 25px;
-    color: #666;
+    color: #ffffff;
 }
 
 .stats {
@@ -778,18 +782,18 @@ footer {
 
 .elegant-contact h2 {
     text-align: center;
-    color: #333;
+    color: #101010;
     margin-bottom: 15px;
 }
 
 .elegant-contact .subtitle {
     text-align: center;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 40px;
 }
 
 .spa-form {
-    max-width: 700px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
