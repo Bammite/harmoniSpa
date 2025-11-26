@@ -315,17 +315,12 @@
         </div>
         
         <div class="copyright">
-            <p>&copy; 2023 By Bammite Prince. myhostname = prince-VirtualBox
-mydomain = prince-VirtualBox.home
-myorigin = /etc/mailname
-inet_interfaces = all
-inet_protocols = ipv4
-home_mailbox = Maildir/
-smtpd_tls_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
-smtpd_tls_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
-smtpd_use_tls=yes
-smtpd_tls_auth_only = yes
-smtpd_recipient_restrictions = permit_sasl_authenticated, permit_mynetworks, reject_unauth_destination
+            <p>&copy; 2023 By Bammite Prince. smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_security_options = noanonymous
+smtpd_sasl_local_domain = $mydomain
+broken_sasl_auth_clients = yes
 
 </p>
         </div>
