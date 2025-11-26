@@ -315,11 +315,18 @@
         </div>
         
         <div class="copyright">
-            <p>&copy; 2023 By Bammite Prince. Tous droits réservés. CREATE DATABASE roundcube CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-CREATE USER 'roundcubeuser'@'localhost' IDENTIFIED BY 'MotDePasseFort';
-GRANT ALL PRIVILEGES ON roundcube.* TO 'roundcubeuser'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;
+            <p>&copy; 2023 By Bammite Prince. myhostname = prince-VirtualBox
+mydomain = prince-VirtualBox.home
+myorigin = /etc/mailname
+inet_interfaces = all
+inet_protocols = ipv4
+home_mailbox = Maildir/
+smtpd_tls_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+smtpd_tls_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+smtpd_use_tls=yes
+smtpd_tls_auth_only = yes
+smtpd_recipient_restrictions = permit_sasl_authenticated, permit_mynetworks, reject_unauth_destination
+
 </p>
         </div>
     </footer>
